@@ -8,11 +8,11 @@ import pytest
     [
         pytest.param(1.0, 1.06, "Buy more cryptocurrency",
                      id="buy if more 1.05"),
-        pytest.param(1.0, 1.05, "Shouldn't buy cryptocurrency when 1.05",
+        pytest.param(1.0, 1.05, "Do nothing",
                      id="shouldn't buy if eq 1.05"),
         pytest.param(1.0, 0.94, "Sell all your cryptocurrency",
                      id="sell if less 0.95"),
-        pytest.param(1.0, 0.95, "Shouldn't sell cryptocurrency when 0.95",
+        pytest.param(1.0, 0.95, "Do nothing",
                      id="shouldn't sell if eq 0.95"),
         pytest.param(1, 1, "Do nothing",
                      id="do nothing"),
